@@ -1,10 +1,13 @@
 import './App.css'
 import { ShoppingList } from './components'
+import { ShoppingListProvider } from './providers'
 
 function App() {
 
   return (
-    <ShoppingList />
+    <ShoppingListProvider>
+      <ShoppingList />
+    </ShoppingListProvider>
   )
 }
 
