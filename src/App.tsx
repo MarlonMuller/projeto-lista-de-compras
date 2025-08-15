@@ -1,5 +1,4 @@
 import './App.css'
-import { ShoppingList } from './components'
 import { ShoppingListProvider } from './providers'
 import { RouterProvider } from 'react-router-dom'
 import { routes } from './routes'
