@@ -1,69 +1,83 @@
-# React + TypeScript + Vite
+# 🛒 Projeto Lista de Compras
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web para criar e gerenciar uma lista de compras de forma simples e prática.  
+Desenvolvida com **React**, **TypeScript** e **Vite** (com **CSS** para estilização).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Acesse o projeto online
 
-## Expanding the ESLint configuration
+👉 [Visite a Lista de Compras](https://projeto-lista-de-compras-s8ab.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📸 Prévia
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+<img width="553" height="389" alt="image" src="https://github.com/user-attachments/assets/0de3b67d-461a-4ac9-8ec7-9cc73f0d9ef5" />
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 💡 Funcionalidades
+
+- Adicionar novos itens à lista  
+- Marcar itens como concluídos  
+- Remover itens da lista  
+- Interface simples e objetiva
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **React** — componentes e estado  
+- **TypeScript** — tipagem estática e segurança do código  
+- **Vite** — dev server rápido e bundling  
+- **CSS** — estilização da interface
+
+---
+
+## 📂 Como usar localmente
+
+1. Clone o repositório:
+```bash
+# Clone este repositório
+git clone https://github.com/MarlonMuller/projeto-lista-de-compras.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Acesse a pasta do projeto:
+```bash
+cd projeto-lista-de-compras
 ```
+3. Instale as dependências:
+```bash
+npm install
+```
+4. Rode o projeto em modo desenvolvimento:
+```bash
+npm run dev
+```
+5. Acesse a URL exibida no terminal (geralmente http://localhost:5173)
+---
+
+## 📚 O que eu aprendi
+
+- Criar componentes funcionais em React com TypeScript
+- Gerenciar estado e eventos para listas dinâmicas
+- Configurar e rodar um projeto moderno com Vite
+- Organizar estilos com CSS
+
+---
+
+## 📌 Melhorias futuras
+
+- Persistência com LocalStorage
+- Filtros (ex.: “todos”, “pendentes”, “concluídos”)
+- Edição inline dos itens
+- Testes unitários (ex.: Vitest / React Testing Library)
+- Acessibilidade (atalhos e ARIA)
+
+---
+
+## ✍️ Autor
+
+### Desenvolvido por **[Marlon Muller](https://github.com/MarlonMuller)**  
+---
